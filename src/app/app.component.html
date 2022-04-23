@@ -1,0 +1,55 @@
+<!--Logo and Tittle part-->
+<div style="text-align: center">
+  <img src="../assets/cherry-blossom-g6750f319f_640.png" alt="Logo" width="100" height="100" class="logo" />
+  <h1 class="app-title">Spring cleaning todo-list</h1>
+</div>
+
+<!--Other parts-->
+<div class="container">
+  Spring is here and you might have gotten inspiration to organize your house, clothes or other belongings.
+  This application will help you to keep a track of different tasks. <br>
+  <br>Simply add your tasks and mark them done after
+  you've completed them.
+  
+  You can also remove tasks from the list by clicking a "delete" button.
+  <br />
+  <input type="text" class="input-text" placeholder="Type a task.." [(ngModel)]="todoValue" (keyup.enter)="addItem()" />
+
+  <!-- Add button-->
+  <button class="add-btn" (click)="addItem()">
+    Add task</button>
+
+  <!-- Line before list -->
+  <hr size="1" width="90%" color="white" margin="10px">
+
+  <!-- List part starts -->
+  <h1 class="app-subhead">Your task list</h1>
+  <div class="list">
+    <ul>
+      <li *ngFor="let item of list">
+
+        <div class="container2">
+          <label class="containerNapille">
+            <input type="checkbox" name="isDone" [(ngModel)]="item.isDone" />
+            <span class="checkmark"></span></label>
+
+          <div class="container-tasks"> {{ item.value }} </div>
+
+          <div class="containerdeleteBTN">
+            <button class="btn" (click)="deleteItem(item.id)">
+              Delete</button>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--Footer at the end of page-->
+<div class="footer">
+  <p>Sonja Hopearuoho
+    <br>
+    2022
+  </p>
+</div>

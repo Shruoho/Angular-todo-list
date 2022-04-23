@@ -1,0 +1,204 @@
+
+
+/* CONTAINERS */
+
+  /*Container which has everyng inside*/
+  .container {
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+.container2 {
+  display: flex;
+  
+  width: 100%;
+}
+  /*Container to make longer tasks align nicely*/
+  .container-tasks {
+    width: 100%;
+    margin-left: 40px;
+    text-align: left;
+  }
+
+  /*Container for Delete button*/
+  .container-deleteBTN {
+    padding: 10px;
+    align-content: flex-end;
+  }
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #fff;
+  }
+  
+/*LIST PROPERTIES*/
+
+ul {
+  /* remove default padding and margin from ul*/
+  margin: 0px;
+  padding: 0px;
+  
+}
+.list ul li {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #161a1f;
+  background-color: #ffffff;
+  line-height: 30px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #cccccc;
+  padding: 10px;
+  margin-bottom: 2px;
+  position: relative;
+  border-radius: 0.4rem;
+} 
+  
+
+/*BUTTONS*/
+  
+  /*Button for adding task to a list*/
+  .add-btn {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #e6a1c6;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 0.4rem;
+    display: inline-block;
+    border: none;
+  }
+
+  /*Button for deleting tasks*/
+  .list ul li button {
+    position: relative;
+    right: 0%;
+    background: #e066a0;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 0.4rem;
+    display: inline-block;
+    border: none;
+  }
+
+  
+/* TEXT CLASS PROPERTIES */
+
+  .app-title {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ms Madi', cursive;
+  }
+  .app-subhead {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Ms Madi', cursive;
+  }
+
+  .input-text {
+    display: inline;
+    margin: 0;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 10px;
+  }
+
+
+
+ 
+   
+
+/* The container for checkbox */
+.containerNapille {
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hiding browser's default checkbox */
+.containerNapille input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom checkbox */
+.checkmark {
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ceeafb;
+  border-radius: 0.4rem;
+  border-color: #94c0e6;
+  border-width: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.containerNapille:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a different background */
+.containerNapille input:checked ~ .checkmark {
+  background-color: #e6a1c6;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerNapille input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerNapille .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.footer {
+
+  color: white;
+  font-size: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
